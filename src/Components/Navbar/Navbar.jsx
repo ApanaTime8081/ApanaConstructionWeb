@@ -80,10 +80,11 @@ const Navbar = () => {
           >
             {t("whatsapp")}
           </a>
-          <div>
-          <a href="tel:+918928567312" className="flex items-center space-x-2" >
+          <div className="hidden md:block ">
+          <a href="tel:+918928567312" className="flex items-center space-x-2" 
+          >
                 <FaPhoneAlt className="text-black-500" />
-                <span>8928567312</span>
+                <span>{t("8928567312")}</span>
               </a>
               </div>
           {/* Hamburger Menu Button */}
@@ -118,6 +119,19 @@ const Navbar = () => {
 
           {/* Mobile Language Toggle Button */}
           <div className="mt-4">
+
+          <button
+              onClick={() =>
+                changeLanguage(i18n.language === "en" ? "hi" : "en")
+              }
+              className="flex items-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-md cursor-pointer hover:bg-orange-500 dark:hover:bg-orange-600 transition-all"
+            >
+              <span className="mr-2">
+                {i18n.language === "en" ? "हिंदी" : "English"}
+              </span>
+            </button>
+
+
           <button
               className="flex items-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-md cursor-pointer hover:bg-orange-500 dark:hover:bg-orange-600 transition-all"
             >
@@ -129,16 +143,13 @@ const Navbar = () => {
           </a>
             </button>
 
-            <button
-              onClick={() =>
-                changeLanguage(i18n.language === "en" ? "hi" : "en")
-              }
-              className="flex items-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-md cursor-pointer hover:bg-orange-500 dark:hover:bg-orange-600 transition-all"
-            >
-              <span className="mr-2">
-                {i18n.language === "en" ? "हिंदी" : "English"}
-              </span>
-            </button>
+            <div>
+          <a href="tel:+918928567312" className="flex items-center space-x-2" >
+                <FaPhoneAlt className="text-black-500" />
+                <span>{t("8928567312")}</span>
+              </a>
+              </div>
+
           </div>
         </div>
       )}
