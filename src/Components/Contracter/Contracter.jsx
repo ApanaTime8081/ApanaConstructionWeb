@@ -26,7 +26,11 @@ const ContractorSection = () => {
         description: t("civilEngineerDesc"),
         img: image_2,
       },
-      {id: 3, title: t("mason"), description: t("masonDesc"), img: image_4},
+      {
+        id: 3, 
+        title: t("mason"), 
+        description: t("masonDesc"), 
+        img: image_4},
       {
         id: 4,
         title: t("carpenter"),
@@ -39,16 +43,35 @@ const ContractorSection = () => {
         description: t("electricianDesc"),
         img: image_5,
       },
-      {id: 6, title: t("plumber"), description: t("plumberDesc"), img: image_6},
-      {id: 7, title: t("welder"), description: t("welderDesc"), img: image_1},
-      {id: 8, title: t("painter"), description: t("painterDesc"), img: image_2},
+      {
+        id: 6,
+         title: t("plumber"),
+          description: t("plumberDesc"),
+           img: image_6
+      },
+      {
+        id: 7,
+        title: t("welder"), 
+        description: t("welderDesc"), 
+        img: image_1
+      },
+      {
+        id: 8, 
+        title: t("painter"), 
+        description: t("painterDesc"), 
+        img: image_2
+      },
       {
         id: 9,
         title: t("tileSetter"),
         description: t("tileSetterDesc"),
         img: image_4,
       },
-      {id: 10, title: t("roofer"), description: t("rooferDesc"), img: image_4},
+      {
+        id: 10, 
+        title: t("roofer"), 
+        description: t("rooferDesc"), 
+        img: image_4},
       {
         id: 11,
         title: t("popDesigner"),
@@ -76,7 +99,7 @@ const ContractorSection = () => {
     }
   };
 
-  const visibleContractors = showAll ? contractors : contractors.slice(0, 5);
+  const visibleContractors = showAll ? contractors : contractors.slice(0, 6);
 
   return (
     <section ref={sectionRef} id="Contractor" className="bg-orange-500 py-16">
