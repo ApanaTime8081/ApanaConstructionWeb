@@ -81,7 +81,8 @@ const Navbar = () => {
             {t("whatsapp")}
           </a>
           <div className="hidden md:block ">
-          <a href="tel:+918928567312" className="flex items-center space-x-2" >
+          <a href="tel:+918928567312" className="flex items-center space-x-2" 
+          >
                 <FaPhoneAlt className="text-black-500" />
                 <span>{t("8928567312")}</span>
               </a>
