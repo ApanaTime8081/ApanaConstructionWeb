@@ -1,6 +1,7 @@
-import React from "react";
+// import React from "react";
 import styled from "styled-components";
 
+// eslint-disable-next-line react/prop-types
 const Card = ({imageSrc, title, subtitle}) => {
   return (
     <StyledWrapper>
