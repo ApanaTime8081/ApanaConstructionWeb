@@ -1,9 +1,9 @@
-import React, {useState} from "react";
-import {useTranslation} from "react-i18next";
-import {Swiper, SwiperSlide} from "swiper/react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import {Navigation} from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import image_1 from "./image_1.jpg";
 import image_2 from "./image_2.jpg";
 import image_3 from "./image_3.jpg";
@@ -21,7 +21,7 @@ import image_14 from "./image_14.jpg";
 import image_15 from "./image_15.jpg";
 
 const ProjectSection = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState("all");
 
   const projects = [
@@ -133,12 +133,12 @@ const ProjectSection = () => {
   ];
 
   const categories = [
-    {id: "all", name: t("categoryAll")},
-    {id: "construction", name: t("categoryConstruction")},
-    {id: "architecture", name: t("categoryArchitecture")},
-    {id: "building", name: t("categoryBuilding")},
-    {id: "renovations", name: t("categoryRenovations")},
-    {id: "interior", name: t("categoryInterior")},
+    { id: "all", name: t("categoryAll") },
+    { id: "construction", name: t("categoryConstruction") },
+    { id: "architecture", name: t("categoryArchitecture") },
+    { id: "building", name: t("categoryBuilding") },
+    { id: "renovations", name: t("categoryRenovations") },
+    { id: "interior", name: t("categoryInterior") },
   ];
 
   const filteredProjects =
@@ -185,9 +185,9 @@ const ProjectSection = () => {
           navigation={true}
           modules={[Navigation]}
           breakpoints={{
-            640: {slidesPerView: 1},
-            768: {slidesPerView: 2},
-            1024: {slidesPerView: 3},
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
           }}
           className="mySwiper"
         >
@@ -199,7 +199,7 @@ const ProjectSection = () => {
                   alt={project.title}
                   className="w-full h-56 object-cover"
                 />
-                <div className="p-6">
+                {/* <div className="p-6">
                   <h3 className="text-2xl font-bold text-gray-700 dark:text-gray-100 mb-4 group-hover:text-orange-500">
                     {project.title}
                   </h3>
@@ -208,6 +208,31 @@ const ProjectSection = () => {
                   </p>
                   <button className="bg-orange-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
                     {t("viewDetails")}
+                  </button>
+                </div> */}
+
+                {/* Content */}
+                <div className="p-6">
+                  {/* Project ID and Location */}
+                  <div className="mb-2">
+                    <h3 className="text-xl font-bold text-gray-700 dark:text-gray-100 group-hover:text-orange-500">
+                      CRN52902
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      bannerghatta, Bengaluru
+                    </p>
+                  </div>
+
+                  {/* Property Details */}
+                  <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-4">
+                    <span>3000 sq.ft.</span>
+                    <span>G + 1</span>
+                    <span>Classic</span>
+                  </div>
+
+                  {/* View Details Button */}
+                  <button className="bg-orange-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                    View Details
                   </button>
                 </div>
               </div>
