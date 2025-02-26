@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import {FiSun, FiMoon} from "react-icons/fi";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
