@@ -71,7 +71,8 @@ const FAQSection = () => {
           Frequently Asked Questions
         </h2>
         <p className="text-lg text-gray-700  text-center dark:text-white mb-10">
-        Our FAQs section is designed to provide quick and clear answers to common inquiries about our services, processes, and policies.
+          Our FAQs section is designed to provide quick and clear answers to
+          common inquiries about our services, processes, and policies.
         </p>
 
         {/* FAQ Items */}

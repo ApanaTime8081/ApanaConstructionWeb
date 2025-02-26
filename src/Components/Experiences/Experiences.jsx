@@ -1,10 +1,10 @@
-import {Link} from "react-scroll";
-import {useTranslation} from "react-i18next";
+import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 import exp from "./exp.jpg";
 import "./style.css";
 
 const ExperienceSection = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-16 bg-gray-100 dark:bg-gray-900 transition-colors duration-1000">
