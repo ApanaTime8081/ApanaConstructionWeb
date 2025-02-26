@@ -7,7 +7,8 @@ import Hero from "../Hero/Hero";
 import ProjectSection from "../Projects/Projects";
 import OurServices from "../Services/Services";
 // import TestimonialsSection from "../TestiMonial/TestiMonial";
-import ProjectStepsHorizontalLine from "../WorkFlow/WorkFlow";
+// import ProjectStepsHorizontalLine from "../WorkFlow/WorkFlow";
+import Newworkflow from "../WorkFlow/Newworkflow";
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
         {/* <section id="about">
           <AboutUs />
         </section> */}
-           <section id="project">
+        <section id="project">
           <ProjectSection />
         </section>
         <section id="services">
@@ -34,9 +35,15 @@ const Home = () => {
         {/* <section id="experience">
           <ExperienceSection />
         </section> */}
-        <section id="workflow">
+
+        {/* <section id="workflow">
           <ProjectStepsHorizontalLine />
+        </section> */}
+        <section id="workflow">
+          <Newworkflow />
         </section>
+
+        
         {/* <section id="testiMonial">
           <TestimonialsSection />
         </section> */}
