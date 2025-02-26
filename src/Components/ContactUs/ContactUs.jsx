@@ -1,13 +1,13 @@
-import {useState} from "react";
-import {FaUsers, FaCheckCircle, FaFlask, FaDollarSign} from "react-icons/fa";
-import {FireBase} from "./firebase"; // Import Firebase
-import {collection, addDoc} from "firebase/firestore";
+import { useState } from "react";
+import { FaUsers, FaCheckCircle, FaFlask, FaDollarSign } from "react-icons/fa";
+import { FireBase } from "./firebase"; // Import Firebase
+import { collection, addDoc } from "firebase/firestore";
 import Swal from "sweetalert2";
-import {useTranslation} from "react-i18next"; // Import useTranslation hook
+import { useTranslation } from "react-i18next"; // Import useTranslation hook
 import "./Style.css";
 
 const ContactSection = () => {
-  const {t} = useTranslation(); // Initialize translation
+  const { t } = useTranslation(); // Initialize translation
 
   const [formData, setFormData] = useState({
     name: "",
@@ -18,7 +18,7 @@ const ContactSection = () => {
   });
 
   const handleChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value});
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {

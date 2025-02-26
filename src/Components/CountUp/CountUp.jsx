@@ -1,6 +1,6 @@
-import {useEffect, useState, useRef} from "react";
-import {useTranslation} from "react-i18next";
-import {FaBuilding, FaSmileBeam, FaTools, FaTrophy} from "react-icons/fa";
+import { useEffect, useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import { FaBuilding, FaSmileBeam, FaTools, FaTrophy } from "react-icons/fa";
 
 const counters = [
   {
@@ -29,9 +29,9 @@ const counters = [
   },
 ];
 
-const Counter = ({icon, titleKey, endValue, isVisible}) => {
+const Counter = ({ icon, titleKey, endValue, isVisible }) => {
   const [count, setCount] = useState(0);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (!isVisible) return; // Only start counting when the section is visible
@@ -65,7 +65,7 @@ const Counter = ({icon, titleKey, endValue, isVisible}) => {
 };
 
 const CounterAnimation = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -76,7 +76,7 @@ const CounterAnimation = () => {
           setIsVisible(true);
         }
       },
-      {threshold: 0.5} // 50% visibility triggers the animation
+      { threshold: 0.5 } // 50% visibility triggers the animation
     );
 
     if (sectionRef.current) {

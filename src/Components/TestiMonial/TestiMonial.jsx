@@ -5,13 +5,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
-import image_1 from './image_1.jpg';
-import image_2 from './image_2.jpg';
-import image_3 from './image_3.jpg';
-import image_4 from './image_4.jpg';
-import image_5 from './image_5.jpg';
-import image_6 from './image_6.jpg';
-import image_7 from './image_7.jpg';
+import image_1 from "./image_1.jpg";
+import image_2 from "./image_2.jpg";
+import image_3 from "./image_3.jpg";
+import image_4 from "./image_4.jpg";
+import image_5 from "./image_5.jpg";
+import image_6 from "./image_6.jpg";
+import image_7 from "./image_7.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -83,7 +83,8 @@ const TestimonialsSection = () => {
           What Our Clients Say
         </h2>
         <p className="text-lg text-gray-600  text-center dark:text-white mb-10">
-        We take pride in delivering high-quality construction, renovation, and design services, ensuring client satisfaction at every step.
+          We take pride in delivering high-quality construction, renovation, and
+          design services, ensuring client satisfaction at every step.
         </p>
 
         <Swiper

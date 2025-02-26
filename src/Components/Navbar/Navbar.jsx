@@ -1,15 +1,15 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 // import {FiSun, FiMoon} from "react-icons/fi";
-import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai";
-import {useTranslation} from "react-i18next";
-import {Link} from "react-scroll";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import logo from "./new logo.png";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
   // const [darkMode, setDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const {t, i18n} = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // Load saved language from localStorage
   useEffect(() => {
@@ -24,11 +24,11 @@ const Navbar = () => {
   };
 
   const navItems = [
-    {key: "home", to: "home"},
-    {key: "about", to: "about"},
-    {key: "services", to: "services"},
-    {key: "projects", to: "projects"},
-    {key: "experience", to: "experience"},
+    { key: "home", to: "home" },
+    { key: "about", to: "about" },
+    { key: "services", to: "services" },
+    { key: "projects", to: "projects" },
+    { key: "experience", to: "experience" },
   ];
 
   return (
@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6">
-          {navItems.map(({key, to}) => (
+          {navItems.map(({ key, to }) => (
             <Link
               key={key}
               to={to}
@@ -81,12 +81,11 @@ const Navbar = () => {
             {t("whatsapp")}
           </a>
           <div className="hidden md:block ">
-          <a href="tel:+918928567312" className="flex items-center space-x-2" 
-          >
-                <FaPhoneAlt className="text-black-500" />
-                <span>{t("8928567312")}</span>
-              </a>
-              </div>
+            <a href="tel:+918928567312" className="flex items-center space-x-2">
+              <FaPhoneAlt className="text-black-500" />
+              <span>{t("8928567312")}</span>
+            </a>
+          </div>
           {/* Hamburger Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -104,7 +103,7 @@ const Navbar = () => {
       {/* Mobile Links */}
       {isMenuOpen && (
         <div className="md:hidden bg-gray-100 dark:bg-gray-900 p-4 space-y-2">
-          {navItems.map(({key, to}) => (
+          {navItems.map(({ key, to }) => (
             <Link
               key={key}
               to={to}
@@ -119,8 +118,7 @@ const Navbar = () => {
 
           {/* Mobile Language Toggle Button */}
           <div className="mt-4">
-
-          <button
+            <button
               onClick={() =>
                 changeLanguage(i18n.language === "en" ? "hi" : "en")
               }
@@ -131,25 +129,21 @@ const Navbar = () => {
               </span>
             </button>
 
-
-          <button
-              className="flex items-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-md cursor-pointer hover:bg-orange-500 dark:hover:bg-orange-600 transition-all"
-            >
-             <a
-            href="https://wa.me/+918928567312"
-            target="_blank"
-          >
-            WhatsApp
-          </a>
+            <button className="flex items-center bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-md cursor-pointer hover:bg-orange-500 dark:hover:bg-orange-600 transition-all">
+              <a href="https://wa.me/+918928567312" target="_blank">
+                WhatsApp
+              </a>
             </button>
 
             <div>
-          <a href="tel:+918928567312" className="flex items-center space-x-2" >
+              <a
+                href="tel:+918928567312"
+                className="flex items-center space-x-2"
+              >
                 <FaPhoneAlt className="text-black-500" />
                 <span>{t("8928567312")}</span>
               </a>
-              </div>
-
+            </div>
           </div>
         </div>
       )}

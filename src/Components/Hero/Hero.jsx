@@ -1,9 +1,9 @@
-import {FiCheckCircle} from "react-icons/fi";
-import {Link} from "react-scroll";
-import {useTranslation} from "react-i18next";
+import { FiCheckCircle } from "react-icons/fi";
+import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className="py-24 px-4 mt-16 sm:px-6 lg:px-8 bg-gray-100 dark:bg-gray-900 transition-colors duration-1000 relative overflow-hidden">
@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto text-center mt-24 relative">
         {/* Headline */}
         <h1
-          style={{fontSize: "60px"}}
+          style={{ fontSize: "60px" }}
           className="text-3xl sm:text-5xl font-extrabold leading-tight text-gray-800 dark:text-gray-100"
         >
           {t("heroTitle")}{" "}

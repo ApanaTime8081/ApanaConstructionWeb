@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from "react";
-import {useTranslation} from "react-i18next";
-import {Link} from "react-scroll";
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 import checking from "./checking.jpg";
 import "./About.css";
 
 const AboutUs = () => {
-  const {t, i18n} = useTranslation();
+  const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(
     localStorage.getItem("language") || "en"
   );

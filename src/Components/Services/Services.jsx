@@ -1,4 +1,4 @@
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const services = [
   {
@@ -28,7 +28,7 @@ const services = [
 ];
 
 const OurServices = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-16 bg-orange-500 dark:bg-orange-500 transition-colors duration-1000">
@@ -44,7 +44,7 @@ const OurServices = () => {
             <div
               key={service.id}
               className="p-8 bg-gray-100 dark:bg-gray-800 shadow-md rounded-lg transform hover:scale-105 hover:shadow-lg transition duration-200"
-              style={{maxWidth: "300px", margin: "0 auto"}}
+              style={{ maxWidth: "300px", margin: "0 auto" }}
             >
               <div className="text-4xl mb-4 text-blue-500 flex justify-center">
                 {service.icon}
