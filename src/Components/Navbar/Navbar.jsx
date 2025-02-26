@@ -34,12 +34,18 @@ const Navbar = () => {
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-md fixed top-0 w-full z-10 transition-all duration-1000">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-        <div className="flex items-center space-x-2">
-          <img src={logo} alt="Apana Construction Logo" className="h-14 w-15" />
-          <div className="flex-shrink-0 text-xl md:text-3xl text-orange-600 font-extrabold dark:text-yellow-600">
-            {t("logoText")}
+      <a href="/">
+          <div className="flex items-center space-x-2">
+            <img
+              src={logo}
+              alt="Apana Construction Logo"
+              className="h-14 w-15"
+            />
+            <div className="flex-shrink-0 text-xl md:text-3xl text-orange-600 font-extrabold dark:text-yellow-600">
+              {t("logoText")}
+            </div>
           </div>
-        </div>
+        </a>
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6">
