@@ -1,5 +1,5 @@
-import {useState, useRef, useEffect} from "react";
-import {useTranslation} from "react-i18next";
+import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import image_1 from "./image_1.jpg";
 import image_2 from "./image_2.jpg";
 import image_4 from "./image_4.jpg";
@@ -7,7 +7,7 @@ import image_5 from "./image_5.jpg";
 import image_6 from "./image_6.jpg";
 
 const ContractorSection = () => {
-  const {t, i18n} = useTranslation();
+  const { t, i18n } = useTranslation();
   const [showAll, setShowAll] = useState(false);
   const [contractors, setContractors] = useState([]);
   const sectionRef = useRef(null);
@@ -27,10 +27,11 @@ const ContractorSection = () => {
         img: image_2,
       },
       {
-        id: 3, 
-        title: t("mason"), 
-        description: t("masonDesc"), 
-        img: image_4},
+        id: 3,
+        title: t("mason"),
+        description: t("masonDesc"),
+        img: image_4,
+      },
       {
         id: 4,
         title: t("carpenter"),
@@ -45,21 +46,21 @@ const ContractorSection = () => {
       },
       {
         id: 6,
-         title: t("plumber"),
-          description: t("plumberDesc"),
-           img: image_6
+        title: t("plumber"),
+        description: t("plumberDesc"),
+        img: image_6,
       },
       {
         id: 7,
-        title: t("welder"), 
-        description: t("welderDesc"), 
-        img: image_1
+        title: t("welder"),
+        description: t("welderDesc"),
+        img: image_1,
       },
       {
-        id: 8, 
-        title: t("painter"), 
-        description: t("painterDesc"), 
-        img: image_2
+        id: 8,
+        title: t("painter"),
+        description: t("painterDesc"),
+        img: image_2,
       },
       {
         id: 9,
@@ -68,10 +69,11 @@ const ContractorSection = () => {
         img: image_4,
       },
       {
-        id: 10, 
-        title: t("roofer"), 
-        description: t("rooferDesc"), 
-        img: image_4},
+        id: 10,
+        title: t("roofer"),
+        description: t("rooferDesc"),
+        img: image_4,
+      },
       {
         id: 11,
         title: t("popDesigner"),
@@ -133,6 +135,28 @@ const ContractorSection = () => {
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   {contractor.description}
                 </p>
+                {/* Arrow Button - Hidden by default, visible on hover */}
+                <div className="absolute bottom-[0.5rem] right-[10.5rem] transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                  <a
+                    href="#"
+                    className="flex items-center justify-center w-12 h-12 bg-orange-600 hover:bg-orange-700 text-white rounded-full shadow-lg transition-colors"
+                    aria-label="View Details"
+                  >
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           ))}

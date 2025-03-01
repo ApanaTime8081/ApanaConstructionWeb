@@ -229,6 +229,43 @@ i18n
           "footer.contactLink": "Contact",
           "footer.faqLink": "FAQs",
           "footer.rights": "© {{year}} ApanaTime. All rights reserved.",
+          workflow: {
+            heading: "How it works",
+            subheading:
+              "Our house construction steps are simple and easy to understand: plan - build - track - settle in.",
+            learnMore: "Learn More",
+            steps: {
+              raiseRequest: {
+                title: "Raise a Request",
+                description:
+                  "Raise a house construction service request or call us at +91 7505 205 205. Our team will get in touch with you to understand the requirements in more detail.",
+              },
+              meetExpert: {
+                title: "Meet Our Expert",
+                description:
+                  "Experts will guide you in selecting the right package for the house construction and solve any queries that you may have.",
+              },
+              bookWithUs: {
+                title: "Book with Us",
+                description:
+                  "Good to go! You pay 8% of the estimated project cost as the booking amount to start the house construction.",
+              },
+              receiveDesigns: {
+                title: "Receive Designs",
+                description:
+                  "Our architects will provide exhaustive drawings of your home construction till you are completely satisfied.",
+              },
+              trackTransact: {
+                title: "Track & Transact",
+                description:
+                  "To ensure absolute trust, Brick&Bolt provides an escrow model where you transfer the amount for the stage of the project. You can track the project through our customer application.",
+              },
+              settleIn: {
+                title: "Settle In",
+                description: "Move into your dream space hassle-free.",
+              },
+            },
+          },
         },
       },
       hi: {
@@ -440,6 +477,44 @@ i18n
           "footer.contactLink": "संपर्क करें",
           "footer.faqLink": "सामान्य प्रश्न",
           "footer.rights": "© {{year}} ApanaTime. सर्वाधिकार सुरक्षित।",
+          workflow: {
+            heading: "यह कैसे काम करता है",
+            subheading:
+              "हमारे घर निर्माण के चरण सरल और समझने में आसान हैं: योजना - निर्माण - ट्रैक - बसना।",
+            learnMore: "और जानें",
+            steps: {
+              raiseRequest: {
+                title: "अनुरोध उठाएं",
+                description:
+                  "घर निर्माण सेवा के लिए अनुरोध उठाएं या हमें +91 7505 205 205 पर कॉल करें। हमारी टीम आपसे संपर्क करेगी ताकि आवश्यकताओं को विस्तार से समझा जा सके।",
+              },
+              meetExpert: {
+                title: "हमारे विशेषज्ञ से मिलें",
+                description:
+                  "विशेषज्ञ आपको घर निर्माण के लिए सही पैकेज चुनने में मार्गदर्शन करेंगे और आपके किसी भी सवाल का समाधान करेंगे।",
+              },
+              bookWithUs: {
+                title: "हमारे साथ बुक करें",
+                description:
+                  "सब तैयार! घर निर्माण शुरू करने के लिए आप अनुमानित परियोजना लागत का 8% बुकिंग राशि के रूप में भुगतान करें।",
+              },
+              receiveDesigns: {
+                title: "डिज़ाइन प्राप्त करें",
+                description:
+                  "हमारे आर्किटेक्ट आपके घर निर्माण के विस्तृत चित्र प्रदान करेंगे जब तक आप पूरी तरह संतुष्ट न हों।",
+              },
+              trackTransact: {
+                title: "ट्रैक और लेन-देन",
+                description:
+                  "पूर्ण विश्वास सुनिश्चित करने के लिए, Brick&Bolt एक एस्क्रो मॉडल प्रदान करता है जहां आप प्रोजेक्ट के चरण के लिए राशि स्थानांतरित करते हैं। आप हमारे ग्राहक एप्लिकेशन के माध्यम से प्रोजेक्ट को ट्रैक कर सकते हैं।",
+              },
+              settleIn: {
+                title: "बस जाएं",
+                description:
+                  "अपने सपनों के स्थान में बिना किसी परेशानी के प्रवेश करें।",
+              },
+            },
+          },
         },
       },
     },

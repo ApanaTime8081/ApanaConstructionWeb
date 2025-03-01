@@ -1,11 +1,11 @@
 // src/components/BlogSection.jsx
 import React from "react";
-import image_1 from './image_1.jpg';
-import image_2 from './image_2.jpg';
-import image_3 from './image_3.jpg';
-import image_4 from './image_4.jpg';
-import image_5 from './image_5.jpg';
-import image_6 from './image_6.jpg';
+import image_1 from "./image_1.jpg";
+import image_2 from "./image_2.jpg";
+import image_3 from "./image_3.jpg";
+import image_4 from "./image_4.jpg";
+import image_5 from "./image_5.jpg";
+import image_6 from "./image_6.jpg";
 
 const BlogSection = () => {
   const blogs = [
@@ -75,7 +75,8 @@ const BlogSection = () => {
           Our Latest Blogs
         </h2>
         <p className="text-lg text-white  text-center dark:text-gray-600 mb-10">
-        Our Latest Blogs section keeps you updated with the newest trends and expert tips in the construction, architecture, and design industry.
+          Our Latest Blogs section keeps you updated with the newest trends and
+          expert tips in the construction, architecture, and design industry.
         </p>
 
         {/* Blog Cards */}
