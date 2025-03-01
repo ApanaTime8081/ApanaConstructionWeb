@@ -24,6 +24,12 @@ const Navbar = () => {
   };
 
   const navItems = [
+
+    {key: "home", to: "home"},
+    {key: "about", to: "about"},
+    {key: "services", to: "services"},
+    {key: "experience", to: "experience"},
+    {key: "projects", to: "projects"},
     { key: "home", to: "home" },
     { key: "about", to: "about" },
     { key: "services", to: "services" },

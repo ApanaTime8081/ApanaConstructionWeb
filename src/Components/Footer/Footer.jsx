@@ -140,7 +140,9 @@ const Footer = () => {
         {/* Divider */}
         <div className="border-t border-gray-800 mt-8 pt-4 text-center">
           <p className="text-gray-400">
+            <a href="https://www.apanatime.in" target="_blank">{t("footer.rights", {year: new Date().getFullYear()})}</a>
             {t("footer.rights", { year: new Date().getFullYear() })}
+
           </p>
         </div>
       </div>
