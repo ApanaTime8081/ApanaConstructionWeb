@@ -27,8 +27,8 @@ const Navbar = () => {
     {key: "home", to: "home"},
     {key: "about", to: "about"},
     {key: "services", to: "services"},
-    {key: "projects", to: "projects"},
     {key: "experience", to: "experience"},
+    {key: "projects", to: "projects"},
   ];
 
   return (
