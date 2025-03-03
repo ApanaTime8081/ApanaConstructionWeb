@@ -74,9 +74,9 @@ export default function Workflow() {
           <div key={index} className="flex flex-col items-center z-1">
             {/* Number inside Circle */}
             <motion.div
-              className={`relative w-12 h-12 flex items-center justify-center rounded-full font-bold cursor-pointer border-2 transition-all ${
+              className={`relative !z-auto w-12 h-12 flex items-center justify-center rounded-full font-bold cursor-pointer border-2 transition-all ${
                 activeStep >= index
-                  ? "bg-black text-white border-black"
+                  ? "bg-black text-white border-black z-0"
                   : "bg-white text-black border-black"
               }`}
               whileHover={{scale: 1.3}}
